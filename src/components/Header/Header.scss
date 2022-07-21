@@ -1,0 +1,119 @@
+@import 'styles/variables.scss';
+@import 'styles/mixins.scss';
+
+.header{
+   background-color: $dark-grey3;
+   color: $white;
+   height: 72px;
+   display: flex;
+}
+
+.menubox{
+  padding: 27px 21px;
+  background-color: $dark-grey4;
+  flex-basis: auto;
+}
+
+.menu{
+    width: 30px;
+    height: 18px;
+    position: relative;
+    cursor: pointer;
+
+    > div{
+        width: 30px;
+        height: 2px;
+        position: absolute;
+        background-color: $white;
+    }
+
+}
+
+.top{
+    top: 0;
+}
+
+.middle{
+    top: 8px;
+}
+
+.bottom{
+    bottom: 0;
+}
+
+.header-content{
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 17px;
+
+    &-left{
+        display: flex;
+        align-items: center;
+    }
+}
+
+.appname{
+    display: none;
+    color: $white;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-right: 2px solid $light-grey1;
+    margin-right: 10px;
+
+    @include devices(tablet){
+        display: inline-block;
+
+    }
+}
+
+.name-input{
+   display: inline-block;
+   border: none;
+   outline: none;
+   background-color: transparent;
+   color: $white;
+   padding-bottom: 5px;
+
+
+   &:hover{
+    border-bottom: 1px solid $white;
+   }
+   
+
+   &::placeholder{
+    color: $white;
+    opacity: 1
+   }
+}
+
+.document-name{
+    color: $light-grey1;
+    margin-left: 10px;
+}
+
+.save-changes{
+    display: inline-flex;
+    background-color: $dark-orange;
+    padding: 10px;
+    border-radius: 4px;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10px;
+    cursor: pointer;
+    
+    &:hover{
+        background-color: $light-orange;
+    }
+
+    span{
+        display: none;
+        margin-left: 5px;
+
+        @include devices(tablet){
+            display: inline-block
+        }
+    }
+}

@@ -1,0 +1,29 @@
+@mixin devices($device) {
+
+    @if ($device == tablet) {
+        @media screen and (min-width:481px) {
+            @content
+        }
+    };
+
+    @if ($device == laptop) {
+        @media screen and (min-width:769px) {
+            @content
+        }
+    };
+    
+    @if ($device == desktop) {
+        @media screen and (min-width:1025px) {
+            @content
+        }
+    };
+
+
+    @if ($device == extraLargeScreen) {
+        @media screen and (min-width:1201px) {
+            @content
+        }
+    };
+    
+    
+}

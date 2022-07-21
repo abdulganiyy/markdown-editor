@@ -1,0 +1,158 @@
+@import "styles/_variables";
+@import "styles/_mixins";
+
+:root{
+  --background:#fff;
+  --text-primary:#E4E4E4;
+}
+
+[dark-theme='dark']{
+  --background:#151619;
+  --text-primary:#C1C4CB;
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  overflow: hidden;
+  font-family: 'Roboto';
+  background: var(--background);
+}
+
+.heading{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: $dark-grey4;
+}
+
+.heading-small{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 2px;
+  color: $dark-grey4;
+}
+
+.body{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 15px;
+  color: $dark-grey4;
+
+}
+
+.preview-h1{
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 42px;
+  color: $dark-grey4;
+}
+
+.preview-h2{
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 37px;
+  color: $dark-grey4;
+}
+
+.preview-h3{
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: $dark-grey4;
+}
+
+.preview-h4{
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  color: $dark-grey4;
+}
+
+.preview-h5{
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  color: $dark-grey4;
+}
+
+.preview-h6{
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color:$dark-orange;
+}
+
+.preview-paragraph{
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color:$dark-grey4;
+}
+
+.preview-paragraph-bold{
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color:$dark-grey4;
+}
+
+.markdown{
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color:$dark-grey4;
+}
+
+.show{
+  transform: translateX(200px);
+}
+
+.blockquote{
+  background-color: $dark-grey3;
+  border-left: 3px solid $dark-orange;
+  color: $white;
+  border-radius: 4px;
+  padding: 1rem;
+  width: 335px;
+  word-wrap: break-word;
+}
+
+.code{
+  background-color: $dark-grey3;
+  color: $white;
+  border-radius: 4px;
+  padding: 1rem;
+  width: 335px;
+  word-wrap: break-word;
+}

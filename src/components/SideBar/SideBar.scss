@@ -1,0 +1,69 @@
+@import 'styles/variables.scss';
+@import 'styles/mixins.scss';
+
+.sidebar{
+    position: fixed;
+    width: 200px;
+    height: 100vh;
+    background-color: $dark-grey2;
+    transform: translateX(-200px);
+    top: 0;
+    transition: transform .2s ease-in-out;
+    padding: 1rem .7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &-title{
+        color: $light-grey2;
+    }
+
+}
+
+.open-new{
+    outline:none;
+    border: none;
+    background-color: $dark-orange;
+    color: $white;
+    padding:.5rem 1rem;
+    border-radius: 4px;
+    margin-top: .5rem;
+}
+
+
+.theme-toggler{
+    display: inline-block;
+    width: 48px;
+    height: 24px;
+    background-color: $light-grey1;
+    border-radius: 14.5px;
+    padding: 5px 6px;
+    cursor: pointer;
+}
+
+
+.switch{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: $white;
+    position: relative;
+    transform: translateX(175%);
+    transition: transform .4s ease-in-out;
+}
+
+.dark-mode{
+    transform: translateX(0);
+}
+
+.theme-icon{
+    color: $light-grey1;
+    display: inline-block;
+    margin: 0 .3rem;
+}
+
+.white{
+    color: $white;
+}
+

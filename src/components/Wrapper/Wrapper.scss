@@ -1,0 +1,87 @@
+@import 'styles/variables.scss';
+@import 'styles/mixins.scss';
+
+.wrapper{
+    position: relative;
+    transition: transform .2s ease-in-out;
+    background-color: var(--background);
+    color: var(--text-primary);
+}
+
+.main{
+    height: calc(100vh - 75px);
+    display: block;
+    overflow-y: scroll;
+
+    @include devices(tablet){
+        display: flex;
+        
+        >div{
+            flex: 1;
+            height: 90vh;
+        }
+    }
+}
+
+.markdown-container{
+    border-right: 1px solid $light-grey4;
+    background-color: #fff;
+    color: #35393F;
+    textarea{
+        display: block;
+        width: 100%;
+        padding: .5rem 1rem;
+        height: 90vh;
+        border:none;
+        outline: none;
+        
+    }
+}
+
+.main-heading{
+    background-color: $light-grey5;
+    padding: .5rem 1rem;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    color:$light-grey2;
+    display: flex;
+    justify-content: space-between;
+}
+
+.preview-content{
+    padding: .5rem 1rem;
+    height: 90vh;
+    background-color: #fff;
+    color: #35393F;
+    //overflow-y: scroll;
+
+}
+
+.preview-icon{
+    @include devices(tablet){
+        display: none;
+    }
+}
+
+
+.hide{
+    display: none;
+}
+
+
+.dark{
+    background:#151619;
+    color:#C1C4CB;
+
+    h6{
+        color: $dark-orange;
+    }
+}
+
+.dark-heading{
+    background: #1D1F22;
+}
